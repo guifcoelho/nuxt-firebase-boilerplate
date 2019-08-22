@@ -1,0 +1,25 @@
+.d-inline{
+    display:inline
+}
+.d-inline-block{
+    display:inline-block;
+}
+.d-inline-flex{
+    display: inline-flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-top{
+    vertical-align: top;
+}
+
+.text-v-center{
+    vertical-align: middle;
+}

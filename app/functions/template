@@ -1,0 +1,22 @@
+const functions = require("firebase-functions");
+const app = require("express")();
+
+app.use(function (req, res, next) {
+    response.set('Cache-Control', 'public, max-age=600, s-maxage=1200');
+    res.header('Content-Type', 'application/json');
+    next();
+});
+
+
+app.get('/my-new-route', (req, res) => {
+    
+    //-------------------------------
+    /**
+     * Do some stuff
+     */
+    let data = {};
+     //-------------------------------
+     res.json(data);
+});
+
+exports.api_routes_template = functions.https.onRequest(app);
